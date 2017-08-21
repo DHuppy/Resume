@@ -1,0 +1,47 @@
+$bg-header:#5e5e5e;
+$color-white:#fff;
+$color-blue:#008b9e;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    cursor: default;
+    height: 1500px;
+    background-color: #e0e0e0;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body,
+h4,
+h5 {
+    font-size: 16px;
+}
+
+a {
+    color: black;
+}
+
+.row {
+    width: 1030px;
+}
+
+.row-2 {
+	float: left;
+    width: 372px;
+}
+
+.row-3 {
+	float: left;
+	margin-left: 30px;
+    width: 528px;
+}
+
+.column {
+    height: 1201px;
+}
+
+.clearfix {
+    overflow: hidden;
+    *zoom: 1;
+}

@@ -1,0 +1,143 @@
+#article {
+    padding: 30px 50px;
+    @at-root .sec-title-wrapper:before {
+        background-color: $color-blue;
+        color: #fff;
+        border-radius: 50%;
+        float: left;
+        width: 32px;
+        height: 32px;
+        padding: 6px;
+        text-align: center;
+        line-height: 32px;
+        font-size: 23px;
+    }
+    @at-root .skills {
+        margin-top: 10px;
+    }
+    @at-root .sec-title {
+        float: left;
+        margin-left: 10px;
+        @at-root .sec-title-ch,
+        .sec-title-en {
+            float: left;
+            font: {
+                size: 20px;
+                weight: 700;
+            }
+        }
+        @at-root.sec-title-en {
+            font-size: 16px;
+            color: $color-blue;
+            clear: left;
+        }
+    }
+    @at-root .info-wrapper {
+        margin-top: -20px;
+        &:after {
+            background-color: $color-blue;
+            border-radius: 100%;
+            float: left;
+            width: 14px;
+            height: 14px;
+            padding: 0;
+            content: "";
+            margin-left: 17px;
+            margin-top: -7px;
+        }
+        @at-root .sec-content {
+            padding: 20px 0 0 26px;
+            margin-left: 22px;
+            border-left: 3px solid $color-blue;
+        }
+
+        @at-root .info-list {
+            padding: 10px 0 0 0;
+            &:last-child {
+                padding: 10px 0 15px 0;
+            }
+            &:before {
+                background-color: $bg-header;
+                color: #fff;
+                border-radius: 50%;
+                width: 26px;
+                height: 26px;
+                padding: 6px;
+                text-align: center;
+                line-height: 26px;
+                font-size: 20px;
+                margin-left: -47px;
+                margin-top: -6px;
+                position: absolute;
+            }
+            @at-root .info-title {
+                position: relative;
+                padding: 13px 0 7px 20px;
+                margin: 10px 0 0 -20px;
+                border-top: 3px solid $bg-header;
+                font-size: 20px;
+                @at-root .experience-link {
+                    float: right;
+                    padding: 4px 6px 4px 4px;
+                    margin-left: 5px;
+                    border: 1px solid $bg-header;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    &:hover {
+                        color: $color-white;
+                        background-color: $color-blue;
+                    }
+                    &:before {
+                        margin-right: 4px;
+                    }
+                }
+                @at-root .info-content-title {
+                    margin: 0 0 7px 0;
+                    font: {
+                        size: 20px;
+                        weight: 700;
+                    }
+                    color:$color-blue;
+                }
+                @at-root .info-sec-title {
+                    padding-left: 150px;
+                    margin: -28px 0 12px 0;
+                    font-size: 20px;
+                }
+                @at-root .info-sec-time{
+                    padding-left: 170px;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                @at-root .time{
+                    margin: -25px 0 12px 0;
+                    text-align: right;
+					font-size: 17px;
+                }
+                @at-root .info-item {
+                    line-height: 1.6;
+                    word-break: break-all;
+                    strong {
+                        color: $color-blue;
+                        font-weight: 700;
+                    }
+                    &:before {
+                        margin-right: 5px;
+                        color: $color-blue;
+                    }
+                }
+                &:after {
+                    position: absolute;
+                    right: -14px;
+                    top: -7px;
+                    background-color: $bg-header;
+                    border-radius: 50%;
+                    width: 14px;
+                    height: 14px;
+                    padding: 0;
+                    content: "";
+                }
+            }
+        }
+    }
+}
